@@ -5,6 +5,8 @@ type Props = {
   children: React.ReactNode;
 };
 
+export const revalidate = 60; // キャッシュを60秒保持
+
 export default function NewsLayout({ children }: Props) {
   return (
     <>
